@@ -1,6 +1,14 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let i =0; i<array.length; i++){
+    const num = target - array[i]
+
+    for (let x = i + 1; x< array.length; x++)
+    if (array[x]=== num)return true
+  }
+  return false;
 }
+
 
 /* 
   Write the Big O time complexity of your function here
